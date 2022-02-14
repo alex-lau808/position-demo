@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">    
+    <title>Position Demo</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Position Demo</h1>
+    </header>
+    <main>
+        <nav class="stick">
+            <ul>
+                <li>static</li>
+                <li>relative</li>
+                <li>absolute</li>
+                <li>fixed</li>
+                <li><a href="#more">more</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="ilb">This shows that for inline element, a small space will be added for all white space in the document. 
+                To set width to add up to 100%, the html document 
+                should get rid of the new line white space between &#60;/div&#62;&#60;div&#62;.
+                Refer to the html source.</div><div class="ilb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti nam fugit laudantium doloribus tenetur reprehenderit, alias deserunt reiciendis ut neque vero ex dolorum. Nostrum dolorem veniam molestias ad aliquid.</div>
+        </div>
+
+        <article>
+            <h2>Static Position - Default position</h2>
+            <section>
+                <p>The HTML element is position according to the normal flow of the page. 
+                 With static position, the top, bottom, left, right properties have no effect.
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Relative Position</h2>
+            <section id="relative">
+                <p>The element is positioned according to the normal flow of the document, 
+                    and then offset relative to itself based on the values of 
+                    top, right, bottom, and left. 
+                    The offset does not affect the position of any other elements; thus, 
+                    the space given for the element in the page layout is the same as if 
+                    position were static.
+                </p>
+            </section>
+        </article>
+        
+        <article class="abscontainer">
+            <h1>Top Heading</h1>
+            <h2>Absolute Position</h2>
+            <section class="absolute">
+                <p>
+                    The element is removed from the normal document flow, 
+                    and no space is created for the element in the page layout.
+                    It is positioned relative to its closest <strong>positioned</strong> ancestor, 
+                    if any; otherwise, it is placed relative to the initial containing block. 
+                    Its final position is determined by the values of top, right, bottom, and left.
+                </p>
+            </section>
+        </article>
+
+        <article id="fixed">
+            <h2>Fixed Position</h2>
+            <section>
+                <p>
+                    The element is removed from the normal document flow, 
+                    and no space is created for the element in the page layout. 
+                    It is positioned relative to the initial containing block established by the viewport, 
+                    except when one of its ancestors has a transform, perspective, 
+                    or filter property set to something other than none (see the CSS Transforms Spec), 
+                    in which case that ancestor behaves as the containing block. 
+                    (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) 
+                    Its final position is determined by the values of top, right, bottom, and left.
+                </p>
+            </section>
+        </article>
+
+        <articlen id="filler1"> 
+            <h2>Filler Text</h2>
+            <section>
+                <p>
+                    Lorem ipsum dolor sit amet <span class="hoveronme"> hove on me <span class="hiddenmessage">Hidden message</span></span>consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                </p>
+            </section>
+        </articlen>
+
+        <article id="moresection">
+            <h2 class="stick">More Filler Text</h2>
+            <section>
+                <p id="more">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.               
+                </p>
+            </section>
+        </article>
+        
+        <article>
+            <h2>Filler Text</h2>
+            <section>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consectetur velit distinctio qui cum! Placeat perferendis facilis, tempore at, error nostrum et magnam vero cupiditate aut quod beatae eum? Dignissimos?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In recusandae fuga ducimus aut esse rem et. Optio a, fuga quaerat non, illum doloremque delectus consequuntur cumque magnam amet harum sed!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta fuga libero molestias, ut ex unde obcaecati, nulla quisquam autem eos maiores ipsa quia vel totam quasi est alias aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit enim ea. Facere deleniti excepturi modi aut vitae saepe corrupti quae, soluta id, nesciunt deserunt autem. Id accusamus porro alias.
+                </p>
+            </section>
+        </article>
+
+    </main>
+       
+</body>
+</html>
